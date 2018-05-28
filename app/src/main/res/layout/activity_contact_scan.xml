@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/capture_containter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_gravity="center" />
+    <!--<ImageView-->
+        <!--android:id="@+id/top_mask"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dip50"-->
+        <!--android:background="@drawable/scan_mask"-->
+        <!--android:layout_below="@id/ll_operate_offline"-->
+        <!--android:contentDescription="@string/app_name" />-->
+    <RelativeLayout
+        android:id="@+id/capture_crop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:background="@mipmap/capture"
+
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name">
+
+        <ImageView
+            android:id="@+id/capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@mipmap/scan_line"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/bottom_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/capture_crop_layout"
+        android:background="#f8f8f8"
+        android:contentDescription="@string/app_name" />
+
+
+
+
+
+
+
+</RelativeLayout>
